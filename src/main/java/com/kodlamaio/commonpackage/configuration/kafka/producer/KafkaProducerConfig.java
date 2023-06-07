@@ -8,7 +8,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 @Configuration
 public class KafkaProducerConfig {
     @Bean
-    KafkaProducer getKafkaProducer(KafkaTemplate<String, Object> template) {
-        return new KafkaProducer(template);
+    KafkaProducer getKafkaProducer(KafkaTemplate<String, Object> kafkaTemplate) {
+        return new KafkaProducer(kafkaTemplate);
     }
 }
